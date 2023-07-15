@@ -1,0 +1,45 @@
+.header-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.photo-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+.photo-container>.box>.ip>img{
+    width: 90%;
+
+}
+
+.ip{
+    display: flex;
+
+}
+.ip>p{
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 12px;
+}
+
+.pd{
+    padding-top: 60px;
+}
+
+
+@media screen and (max-width:576px){
+    .photo-container{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .small-pd{
+        padding-top: 60px;
+    }
+    .off-pd{
+        padding-top: 0;
+    }
+
+
+}
